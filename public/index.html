@@ -21,6 +21,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -38,14 +39,59 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+  <div class="center-flex-col" style="height:100%">
+
+    <h4>Sign Up</h4>
+    
+    <form id="form">
+
+      <div class="row">
+        <div class="twelve columns">
+          <label for="name-input">Name</label>
+          <input id="name-input" class="u-full-width" type="text" placeholder="Johnny Appleseed">
+        </div>
       </div>
-    </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <label for="email-input">Email</label>
+          <input id="email-input" class="u-full-width" type="email" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="row">
+
+      <div class="row">
+        <div class="twelve columns">
+          <fieldset>
+            <label for="">Existing Member?</label>
+            <div class="row">
+              <div class="six columns">
+                <label for="yes-radio">
+                  <input type="radio" name="existing-input" id="yes-radio" value="true" />
+                  <span>Yes</span>
+                </label>
+              </div>
+              <div class="six columns">
+                <label for="no-radio">
+                  <input type="radio" name="existing-input" id="no-radio" value="false" />
+                  <span>No</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="twelve columns">
+          <input id="submit-btn" class="button-primary" type="submit" value="Submit" style="width:100%">
+        </div>
+      </div>
+
+    </form>
+
   </div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
