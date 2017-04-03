@@ -25,5 +25,13 @@ $(document).ready(function(){
 });
 
 function addNewUser(name, email, existing) {
-
+	firebase.database().ref('members/').push().set({
+		name: name,
+		email: email,
+		existing: existing
+	}, function(err) {
+		if (!err) {
+			location.href = 'submitted.html';
+		}
+	});
 }
