@@ -8,3 +8,88 @@ html, body {
 	justify-content: center;
 	align-items: center;
 }
+
+.chat-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.messages {
+	width: -moz-calc(100% - 64px);
+	width: -webkit-calc(100% - 64px);
+	width: -o-calc(100% - 64px);
+	width: calc(100% - 64px);
+	height: 100%;
+	margin-left: 32px;
+	margin-right: 32px;
+	margin-top: 32px;
+	margin-bottom: 32px;
+	border: 1px solid #D1D1D1;
+	border-radius: 4px;
+	overflow-y: scroll;
+}
+
+.messages .scroller {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.message {
+	max-width: -moz-calc(100% - 256px);
+	max-width: -webkit-calc(100% - 256px);
+	max-width: -o-calc(100% - 256px);
+	max-width: calc(100% - 256px);
+	height: auto;
+	min-height: 48px;
+	margin-left: 16px;
+	margin-right: 16px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 32px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	border-radius: 8px;
+	align-self: flex-end;
+}
+
+.self {
+	flex-direction: row-reverse;
+	background: #3ec4ee;
+	color: white;
+	align-self: flex-end;
+}
+
+.other {
+	flex-direction: row;
+	background: #efefef;
+	align-self: flex-start;
+}
+
+.message span {
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.input-bar {
+	width: -moz-calc(100% - 64px);
+	width: -webkit-calc(100% - 64px);
+	width: -o-calc(100% - 64px);
+	width: calc(100% - 64px);
+	/*height: 38px;*/
+	height: auto;
+	margin-left: 32px;
+	margin-right: 32px;
+	/*border: 1px solid black;*/
+
+}

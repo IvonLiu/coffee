@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Coffee</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
+  <link rel="stylesheet" href="../css/index.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+
+  <!-- JavaScript
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/chat.js"></script>
+
+</head>
+<body>
+
+  <div class="container" style="height:100%">
+    <div class="chat-container">
+
+      <div class="messages" id="message-container">
+        <div class="scroller" id="message-list">
+          <!-- to be populated in chat.js -->
+        </div>
+
+      </div>
+
+      <div class="input-bar">
+        <form id="form">
+          <div class="row">
+            <div class="ten columns">
+              <input id="msg-input" class="u-full-width" type="text" placeholder="Type a message...">
+            </div>
+            <div class="two columns">
+              <input id="submit-btn" class="button-primary" type="submit" value="Send" style="width:100%">
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
